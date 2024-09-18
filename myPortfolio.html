@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: url('p_background.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+			font-family: "Times New Roman", Times, serif;
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+		.logo{
+			display: inline-block;
+			justify-content: space-between;
+			align-items: center;
+			border: 2px;
+			background: transparent;
+			border-style: solid;
+			border-radius:50px;
+			color: blue;
+			border-color: blue;
+			width: 20px;
+			height: 20px;
+			margin: 5px;
+		
+		}
+
+        .flex-container {
+            display: flex;
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+            padding: 10px;
+			flex-wrap: wrap; 
+\        }
+		.flex-container a{
+			color: white;
+			text-decoration: none;
+			margin: 10px 20px 10px 20px;
+	
+		}
+		#homel:hover{
+			color: dodgerblue;
+	
+		}
+		
+		
+		.box {
+			display: flex; 
+			flex-direction: column; 
+			justify-content: flex-start;
+			align-items: flex-start; 
+			margin: 5% auto;
+			border: 2px solid grey; 
+			width: 90vw; 
+			max-width: 500px; 
+			padding: 2%; 
+			box-sizing: border-box;
+			background: rgba(0, 0, 0, 0.5);
+}
+
+		.box p {
+			font-size: 1.5vw; /* Responsive font size using viewport width */
+		}
+
+		p{
+			font-size:25px;
+		
+		}
+		about{
+			
+			justify-content: flex-end;
+			align-items: flex-end;
+			
+		}
+		.h1{
+			text-align: center;
+			font-size: 35px;
+			
+			}
+		@keyframes fadeInOut {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .fade-text {
+            animation: fadeInOut 4s;
+        }
+		.pic{
+			float: right;
+			justify-content: flex-end;
+			max-width:40%;
+			margin: 100px;
+			height: 300px;
+			width: 350px;
+			border-style: solid;
+			border-radius: 50%;
+			background: transparent;
+			color: black;
+		}
+		.clearfix {
+			clear: both;
+		}
+		p.one{
+			justify-content: center;
+			align-items: center;
+			margin-left:60px;
+			
+			padding: 20px;
+			width: 500px;
+			height: 250px;
+		}
+		div.one{
+			display: flex;
+			float : left;
+			justify-content: center;
+			align-items: center;
+			margin: 20px;
+		
+		
+		}
+		div.two{
+			float: none;
+		}
+		.border{
+			border-style: solid;
+			margin-left: 50px;
+			padding: 10px;
+		
+		}
+		
+		.table{
+			border: 2px solid grey;
+			justify-content: flex-start;
+			align-items: f;
+			margin: auto;
+			width: 70%;
+			font-size: 30px;
+			height: 150px;
+		}
+		table, th,tr, td{
+			border: 2px solid white;
+			//border-radius: 10px;
+			text-align: center;
+		
+		}
+		.colour{
+			color:   rgb(135, 215, 255);
+		
+		}
+		tr:nth-child(even) {
+			background-color: rgba(150, 212, 212, 0.4);
+		}
+
+		th:nth-child(even),td:nth-child(even) {
+			background-color: rgba(150, 212, 212, 0.4);
+		}
+		section{
+	
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			scroll-behavior: smooth; 
+		}
+		caption {
+			caption-side: top; 
+			margin-bottom: 10px; 
+			font-weight: bold;
+			font-size: 1.2rem;
+			text-align: center;
+}
+		img{
+			display:flex;
+			float:left;
+		
+		}
+		.sp{
+			text-decoration:none;
+			color: white;
+		}
+		.down{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color:rgb(135, 215, 255) ;
+			border: 2px solid white;
+			border-radius: 10px;
+			padding: 3px;
+			border-color: rgb(135, 215, 255);
+			margin-top: 15px;
+			
+		}
+		a {
+			text-decoration: none; 
+	   
+		}
+		.certificate{
+			width: 300px;
+			height: 200px;
+			margin-left: 50px;
+			margin-right: 50px;
+			margin-top: 100px;
+		}
+		
+		@media only screen and (max-device-width: 1024px) {
+		.space{
+			margin:30px;
+			flex-direction: colum;
+		}
+}
+	
+    </style>
+	
+</head>
+<body>
+    <header>
+        <div class="flex-container" >
+            <a href="#home" id="homel">Home</a>
+            <a href="#about" id="homel">About</a>
+            <a href="#skills"id="homel">Skills</a>
+            <a href="#certification" id="homel">Certification</a>
+        </div>
+
+    </header>
+	<section id="home">
+	<div class="box home">
+		<h1 class="fade-text">Hi, I am Maria Kamboh, <br> <span style="color:  rgb(135, 215, 255);">Frontened Developer</span></h1>
+		<p>Crafting sleek, responsive, and user-centric websites. I combine creativity with code to deliver smooth, engaging digital experiences. Let's bring your vision to life!</p>
+		<br>
+		<a href="https://www.linkedin.com/in/maria-kamboh-94ab7224b/">
+		<img src="linkedin.png" alt="Logo" class="logo" >	
+		<span class="sp">Linkedin</span>
+		</a>
+		<a href="https://github.com/mariakamboh">
+		<img src="github.png" alt="Logo" class="logo" >	
+		<span class="sp">Github</span>
+		</a>
+		<a href="mailto: mariakamboh55@gmail.com">
+		<img src="email.png" alt="Logo" class="logo" >	
+		<span class="sp">Email</span>
+		</a>
+	<a href="https://drive.google.com/uc?export=download&id=1DxR5SNLWTVgb2tJ1L-QtNrQkTVXx93Lq" download>
+		<span class="down">Download My CV</span>
+	</a>
+	</div>
+	<img src="my pic.jpg" class="pic">
+	</section>
+	
+	<div class="clearfix"></div>
+	
+	<section id="about">
+	<div class="about">
+		<h1 class="h1">About me<br> <span style="color:  rgb(135, 215, 255);">Frontened Developer</span></h1>
+		<div style="display: flex; justify-content: center; align-items: center;">
+
+	<p class="one">Hello! I'm Maria Kamboh,<br> currently pursuing a <span style="color:  rgb(135, 215, 255);">Bachelor of Science in Computer Science (BSCS) from Sukkur IBA University</span>, expected to graduate in 2026. <br>
+	My passion for technology has driven me to focus on becoming a software engineer, with a particular interest in frontend development and creating innovative, user-centric web applications.</p>
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+	<section id="skills">
+	
+
+	<table class="table" > 
+	<caption class="h1">Skills</caption>
+	 <tr style="height:60px">
+	<th class="colour">Programming Languages</th>
+	<th class="colour"> Databases</th>
+	<th class="colour"> Other Development Tools</th>
+
+	</tr>
+	<tr>
+		<td>C++</td>
+		<td>SQL</td>
+		<td>Github</td>
+	</tr>
+	<tr>
+		<td>Java</td>
+		<td>MySQL</td>
+		<td>VS Code</td>
+	</tr>
+	<tr>
+		<td>JavaScript</td>
+		<td>-</td>
+		<td>Intellij IDEA</td>
+	</tr>
+	<tr>
+		<td>HTML/CSS</td>
+		<td>-</td>
+		<td>Netbeans</td>
+	</tr>
+	</table>
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	<section id="certification">
+	<div class="clearfix space"></div>
+	<div>
+	<a href="https://drive.google.com/file/d/13x2PC2UdGNTZdepgyZ5OZokSG0Lezac7/view?usp=drive_link" >
+	<img src="html.png" class="certificate">
+	
+	</a>
+	<a href="https://drive.google.com/file/d/176Ok060xLO6C6gCEy7ZTc4OR5IfiXMnA/view?usp=drive_link" >
+	<img src="css.png" class="certificate">
+	
+	</a>
+	<a href="https://drive.google.com/file/d/1X_SFjCieiC4TftD4mpUHjaasHHAtEY1e/view?usp=drive_link" >
+	<img src="js.png" class="certificate">
+	
+	</a>
+	</div>
+	
+	</section>
+	
+	
+</body>
+</html>
